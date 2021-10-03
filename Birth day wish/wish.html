@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wish.css">
+    <script src="https://kit.fontawesome.com/8d2babf483.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000);
+        };
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 10000); 
+        };
+
+        start();
+        stop();
+
+    </script>
+    <script>
+    function openNav() {
+        document.getElementById("play").style.display = "none";
+        document.getElementById("text").style.display = "block";
+        document.getElementById("img1").style.display = "block";
+      }
+      </script>
+    <title>Birthday Wish</title>
+</head>
+<body class="section1">
+    <img class="background" src="https://media.istockphoto.com/photos/birthday-party-background-picture-id1081339062?k=20&m=1081339062&s=612x612&w=0&h=fD3zG3SVogVtBiBY-Usg-DKhPE_Cerdbyqq9l0coGBY=">
+    <section id="mic">
+    <header>
+    <div class="headtext" id="text">
+        <span style="--i:1;"><a class="h">H</a></span><span style="--i:2;"><a class="a">A</a></span><span style="--i:3;"><a class="p">P</a></span><span style="--i:4;"><a class="pp">P</a></span><span style="--i:5;"><a class="y">Y</a></span> <span style="--i:6;"><a class="b">B</a></span><span style="--i:7;"><a class="i">I</a></span><span style="--i:8;"><a class="r">R</a></span><span style="--i:9;"><a class="t">T</a></span><span style="--i:10;"><a class="hh">H</a></span><span style="--i:11;"><a class="d">D</a></span><span style="--i:12;"><a class="aa">A</a></span><span style="--i:13;"><a class="yy">Y</a></span> <span style="--i:14;"><a class="tt">T</a></span><span style="--i:15;"><a class="o">O</a></span> <span style="--i:16;"><a class="yyy">Y</a></span><span style="--i:17;"><a class="oo">O</a></span><span style="--i:18;"><a class="u">U</a></span>
+    </div>
+    </header>
+    <audio src="song.mp3" id="mySong">
+        <source src="song.mp3" type="mp3">
+        <iframe src="song.mp3" frameborder="0"></iframe>
+    </audio>
+    <script>
+        var mySong = document.getElementById('mySong');
+        var play = document.getElementById('mic');
+        play.onclick = function(){
+            mySong.play()
+        }
+    </script>
+    <div class="img">
+    <img id="img1" src="img.jpg">
+    <div>
+        <div onclick="openNav()">
+            <div class="mic">
+                <i class="fas fa-play" id="play"></i>
+            </div>
+        </div>
+    </section>
+        <img class="cover-img" src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.6435-9/70616241_2424756600949188_8992719567071477760_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=f-ODa8UXb1MAX84npnp&_nc_ht=scontent.fktm7-1.fna&oh=d912f076215ef97a326c93f1f5c74030&oe=617AE7E8">
+    <section>
+        <div class="container">
+            <img src="https://cdn.shopify.com/s/files/1/0264/6582/8943/products/Copy_of_Cover_250x.png?v=1571685349">
+            <div class="cover">
+                <figure class="front"><img src="img1.jpg"></figure>
+                <figure class="back"><img src="img2.jpg"></figure>
+            </div>
+        </div>
+    </section>
+    <img class="b-ground" src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80">
+    <section class="rotate">
+        <div class="box">
+            <span style="--i:1"><img src="https://www.homemade-gifts-made-easy.com/image-files/xhappy-birthday-images-dreams-come-true-600x900.jpg.pagespeed.ic.g0H63yhfwO.jpg"></span>
+            <span style="--i:2"><img src="img3.jpg"></span>
+            <span style="--i:3"><img src="https://www.wishesmsg.com/wp-content/uploads/Birthday-Messages-for-Husband-1.jpg"></span>
+            <span style="--i:4"><img src="img5.jpg"></span>
+            <span style="--i:5"><img src="https://www.homemade-gifts-made-easy.com/image-files/happy-birthday-images-sprinkled-fun-laughter-600x900.jpg"></span>
+            <span style="--i:6"><img src="img4.jpg"></span>
+            <span style="--i:7"><img src="https://1.bp.blogspot.com/-mhdYXV7RykU/Xls3b-1qM1I/AAAAAAAAnqM/ke6nHNve0twL_s-uNcAuI4tMf8y0VEDYQCLcBGAsYHQ/s1600/Happy-birthday-messages-and-Happy-birthday-wishes%2B%25281%2529-min.jpg"></span>
+            <span style="--i:8"><img src="img6.jpg"></span>
+        </div>
+    </section>
+</body>
+</html>

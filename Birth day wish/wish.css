@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+/* .section1{ */
+    /* background-image: url(https://source.unsplash.com/1600x900/?ballons,birthday-cakes); */
+/* } */
+
+.rotate{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 270%;
+    left: 42%;
+    min-height: 100vh;
+}
+
+.box{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    transform-style: preserve-3d;
+    animation: animation 20s linear infinite;
+}
+
+@keyframes animation{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.section1 .background{
+    width: 100%;
+    height: 100%;
+}
+
+.box span img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-img{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 150%;
+}
+
+#play{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    line-height: 100px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#img1{
+    display: none;
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    clip-path: circle();
+    top: 10%;
+    left: 44%;
+    animation-name: img-animate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: 1s;
+}
+
+@keyframes img-animate {
+    0%   {background-color:red; left:45%; top:45%; width: 100px; height: 100px;}
+    25%  {background-color:yellow; left:45%; top:45%; width: 100px; height: 100px;}
+  }
+
+
+#play:hover{
+    text-align: center;
+    line-height: 105px;
+    background-color: orangered;
+    box-shadow: 1px 4px 2px 2px rgba(255, 255, 255, .2);
+    transition: .5s;
+}
+
+header{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-weight: 1000;
+    color: yellow;
+    font-family: Century Gothic;
+    font-size: 40px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    animation-name: example;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes example {
+    0%   {background-color:red; left:-50px; top:50%;}
+    25%  {background-color:yellow; left:-800px; top:50%;}
+  }
+
+#text{
+    display: none;
+    font-family: audiowide;
+    text-shadow: 3px 3px 3px black;
+}
+
+.h{
+    color: red;
+}
+
+.a{
+    color: blue;
+}
+
+.p{
+    color: brown;
+}
+
+.pp{
+    color: yellowgreen;
+}
+
+.y{
+    color: teal;
+}
+
+.b{
+    color: green;
+}
+.i{
+    color: orange;
+}
+
+.r{
+    color: orchid;
+}
+
+.t{
+    color: red;
+}
+
+.hh{
+    color: purple;
+}
+
+.d{
+    color: saddlebrown;
+}
+
+.aa{
+    color: slateblue;
+}
+
+.yy{
+    color: tomato;
+}
+
+.tt{
+    color: turquoise;
+}
+
+.o{
+    color: orangered;
+}
+
+.yyy{
+    color: peru;
+}
+
+.oo{
+    color: rebeccapurple;
+}
+
+.u{
+    color: seagreen;
+}
+
+.container{
+    width: 250px;
+    height: 350px;
+    background: #2e517d;
+    position: relative;
+    left: 40%;
+    top: 40%;
+    transform: translate(0%,20%);
+    perspective: 1000px;
+}
+
+.b-ground{
+    transform: translate(0,38%);
+    width: 100%;
+}
+
+.headtext span{
+    position: relative;
+    display: inline-block;
+    animation: ani 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes ani{
+    0%{
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(-10px);
+    }
+
+    40%, 100%{
+        transform: translateY(0px);
+    }
+}
+
+.container img{
+    position: absolute;
+    left: 16%;
+    width: 210px;
+    height: 350px;
+    background: url(https://9cba5880bc14451f9693-e0fe15aac731c5feebe40b7a92b75181.ssl.cf5.rackcdn.com/happy-birthday-wishes-cover.png);
+}
+
+.cover{
+    position: absolute;
+    width: 210px;
+    height: 100%;
+    left: 40px;
+    background-color: #345b8c;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all .5s ease-in;
+}
+
+.container:hover .cover{
+    transform: rotateY(-180deg);
+}
+
+figure{
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+figure.front{
+    background: red;
+}
+
+.front img{
+    height: 350px;
+    width: 210px;
+    left: 0%;
+}
+
+.back img{
+    height: 350px;
+    width: 210px;
+    left: 0%;
+}
+
+figure.back{
+    background: green;
+    transform: rotateY(180deg);
+}
